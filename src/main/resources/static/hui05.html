@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			function calc() {
+				let url = "/hui05/calc?x=" + $("#x").val() + "&y=" + $("#y").val();
+				$("#r").load(url);
+			}
+		</script>
+	</head>
+	<body>
+		<input id="x" />
+		+
+		<input id="y" />
+		<input type="button" value="=" onclick="calc()" />
+		<span id="r"></span>
+	</body>
+</html>
