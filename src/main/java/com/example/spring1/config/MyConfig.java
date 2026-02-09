@@ -20,7 +20,8 @@ public class MyConfig {
 		return user;
 	}
 	
-	public RestTemplate getRestTemolete() {
+	@Bean
+	public RestTemplate getRestTemplete() {
 		return new RestTemplate();
 	}
 }
