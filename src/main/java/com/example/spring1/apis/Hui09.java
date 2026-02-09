@@ -178,7 +178,7 @@ public class Hui09 {
 			sql = """
 					UPDATE member
 					SET 
-						passwd = :passwd
+						name = :name
 					WHERE id = :id
 					""";
 			params.put("name", member.getName());
